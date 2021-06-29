@@ -1,6 +1,6 @@
 # **FlutterWanAndroid**
 
-Flutter练手项目，基于WanAndroid的Api,界面仿照WanAndroid官网客户端
+Flutter练手项目(移动端)，基于WanAndroid的Api,界面仿照WanAndroid的Android客户端
 
 
 ### 模块
