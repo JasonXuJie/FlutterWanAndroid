@@ -1,0 +1,104 @@
+name: Inke
+description: A new Flutter application.
+
+version: 1.0.0
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.1
+  get: 4.1.4
+  #纯Flutter版的Toast https://github.com/OpenFlutter/flutter_oktoast
+  oktoast: 3.0.0
+  shared_preferences: 2.0.6
+  #网络请求
+  dio: 4.0.0
+  #网络图片加载
+  cached_network_image: 3.0.0
+  #文件管理器
+  #path_provider: ^1.6.7
+  #图片选择器
+  #image_picker: ^0.6.5+2
+  #列表下拉刷新上拉加载更多
+  pull_to_refresh: 2.0.0
+  #瀑布流布局
+  flutter_staggered_grid_view: 0.4.0
+  #骨架效果
+  shimmer: 2.0.0
+  #android photoView
+  #photo_view: 0.11.0
+  #Banner轮播控件
+  flutter_swiper: 1.1.6
+  #系统分享
+  share: 2.0.4
+  #事件总线
+  event_bus: 2.0.0
+  #监听网络状态
+  connectivity: 3.0.6
+  webview_flutter: 2.0.8
+  # 启动URL的插件 https://github.com/flutter/plugins/tree/master/packages/url_launcher
+  #url_launcher: 6.0.2
+  #微信分享 https://github.com/OpenFlutter/fluwx ^1.0.3
+  #fluwx: 2.0.8+3
+  #Flutter工具类
+  #flustars: 2.0.0
+  html: 0.15.0
+  like_button: 2.0.2
+
+
+
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  #允许使用一组预定义的Material icons
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #  - images/a_dot_burr.jpeg
+  #  - images/a_dot_ham.jpeg
+  assets:
+   - assets/images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages
