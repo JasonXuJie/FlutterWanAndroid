@@ -37,7 +37,13 @@ class Routes{
   ///知识体系下文章
   static String systemArticle = 'systemArticle';
 
+  ///分享人对应列表
+  static String shareOne = '/shareOne';
 
+  ///我的分享
+  static String myShare = '/myShare';
 
+  ///分享文章
+  static String share = '/share';
 
 }

@@ -9,6 +9,8 @@ import 'package:Inke/bean/top_list_entity.dart';
 import 'package:Inke/generated/json/top_list_entity_helper.dart';
 import 'package:Inke/bean/banner_entity.dart';
 import 'package:Inke/generated/json/banner_entity_helper.dart';
+import 'package:Inke/bean/share_one_entity.dart';
+import 'package:Inke/generated/json/share_one_entity_helper.dart';
 import 'package:Inke/bean/login_entity.dart';
 import 'package:Inke/generated/json/login_entity_helper.dart';
 import 'package:Inke/bean/project_classify_entity.dart';
@@ -59,6 +61,16 @@ class JsonConvert<T> {
 				return bannerEntityFromJson(data as BannerEntity, json) as T;
 			case BannerData:
 				return bannerDataFromJson(data as BannerData, json) as T;
+			case ShareOneEntity:
+				return shareOneEntityFromJson(data as ShareOneEntity, json) as T;
+			case ShareOneData:
+				return shareOneDataFromJson(data as ShareOneData, json) as T;
+			case ShareOneDataCoinInfo:
+				return shareOneDataCoinInfoFromJson(data as ShareOneDataCoinInfo, json) as T;
+			case ShareOneDataShareArticles:
+				return shareOneDataShareArticlesFromJson(data as ShareOneDataShareArticles, json) as T;
+			case ShareOneDataShareArticlesDatas:
+				return shareOneDataShareArticlesDatasFromJson(data as ShareOneDataShareArticlesDatas, json) as T;
 			case LoginEntity:
 				return loginEntityFromJson(data as LoginEntity, json) as T;
 			case LoginData:
@@ -142,6 +154,16 @@ class JsonConvert<T> {
 				return bannerEntityToJson(data as BannerEntity);
 			case BannerData:
 				return bannerDataToJson(data as BannerData);
+			case ShareOneEntity:
+				return shareOneEntityToJson(data as ShareOneEntity);
+			case ShareOneData:
+				return shareOneDataToJson(data as ShareOneData);
+			case ShareOneDataCoinInfo:
+				return shareOneDataCoinInfoToJson(data as ShareOneDataCoinInfo);
+			case ShareOneDataShareArticles:
+				return shareOneDataShareArticlesToJson(data as ShareOneDataShareArticles);
+			case ShareOneDataShareArticlesDatas:
+				return shareOneDataShareArticlesDatasToJson(data as ShareOneDataShareArticlesDatas);
 			case LoginEntity:
 				return loginEntityToJson(data as LoginEntity);
 			case LoginData:
@@ -226,6 +248,16 @@ class JsonConvert<T> {
 			return BannerEntity().fromJson(json);
 		}	else if(type == (BannerData).toString()){
 			return BannerData().fromJson(json);
+		}	else if(type == (ShareOneEntity).toString()){
+			return ShareOneEntity().fromJson(json);
+		}	else if(type == (ShareOneData).toString()){
+			return ShareOneData().fromJson(json);
+		}	else if(type == (ShareOneDataCoinInfo).toString()){
+			return ShareOneDataCoinInfo().fromJson(json);
+		}	else if(type == (ShareOneDataShareArticles).toString()){
+			return ShareOneDataShareArticles().fromJson(json);
+		}	else if(type == (ShareOneDataShareArticlesDatas).toString()){
+			return ShareOneDataShareArticlesDatas().fromJson(json);
 		}	else if(type == (LoginEntity).toString()){
 			return LoginEntity().fromJson(json);
 		}	else if(type == (LoginData).toString()){
@@ -310,6 +342,16 @@ class JsonConvert<T> {
 			return data.map<BannerEntity>((e) => BannerEntity().fromJson(e)).toList() as M;
 		}	else if(<BannerData>[] is M){
 			return data.map<BannerData>((e) => BannerData().fromJson(e)).toList() as M;
+		}	else if(<ShareOneEntity>[] is M){
+			return data.map<ShareOneEntity>((e) => ShareOneEntity().fromJson(e)).toList() as M;
+		}	else if(<ShareOneData>[] is M){
+			return data.map<ShareOneData>((e) => ShareOneData().fromJson(e)).toList() as M;
+		}	else if(<ShareOneDataCoinInfo>[] is M){
+			return data.map<ShareOneDataCoinInfo>((e) => ShareOneDataCoinInfo().fromJson(e)).toList() as M;
+		}	else if(<ShareOneDataShareArticles>[] is M){
+			return data.map<ShareOneDataShareArticles>((e) => ShareOneDataShareArticles().fromJson(e)).toList() as M;
+		}	else if(<ShareOneDataShareArticlesDatas>[] is M){
+			return data.map<ShareOneDataShareArticlesDatas>((e) => ShareOneDataShareArticlesDatas().fromJson(e)).toList() as M;
 		}	else if(<LoginEntity>[] is M){
 			return data.map<LoginEntity>((e) => LoginEntity().fromJson(e)).toList() as M;
 		}	else if(<LoginData>[] is M){

@@ -21,33 +21,19 @@ dependencies:
   dio: 4.0.0
   #网络图片加载
   cached_network_image: 3.0.0
-  #文件管理器
-  #path_provider: ^1.6.7
-  #图片选择器
-  #image_picker: ^0.6.5+2
   #列表下拉刷新上拉加载更多
   pull_to_refresh: 2.0.0
   #瀑布流布局
   flutter_staggered_grid_view: 0.4.0
   #骨架效果
   shimmer: 2.0.0
-  #android photoView
-  #photo_view: 0.11.0
   #Banner轮播控件
   flutter_swiper: 1.1.6
-  #系统分享
-  share: 2.0.4
   #事件总线
   event_bus: 2.0.0
   #监听网络状态
   connectivity: 3.0.6
   webview_flutter: 2.0.8
-  # 启动URL的插件 https://github.com/flutter/plugins/tree/master/packages/url_launcher
-  #url_launcher: 6.0.2
-  #微信分享 https://github.com/OpenFlutter/fluwx ^1.0.3
-  #fluwx: 2.0.8+3
-  #Flutter工具类
-  #flustars: 2.0.0
   html: 0.15.0
   like_button: 2.0.2
 

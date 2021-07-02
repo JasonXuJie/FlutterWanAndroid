@@ -22,7 +22,7 @@ class SquareListPage extends GetView<SquareListController> {
         IconButton(
             icon: Icon(Icons.add,color: Colors.white,),
             onPressed: (){
-
+                NavigatorUtil.push(Routes.share);
             }
         )
       ]),
@@ -64,7 +64,13 @@ class SquareListPage extends GetView<SquareListController> {
                       ],
                     )
                 ),
-                Expanded(child: Text('${entity.shareUser}',style: TextStyles.greyNormal12,),),
+                InkWell(
+                  onTap: (){
+                      NavigatorUtil.push(Routes.shareOne,arguments: {'id':'${entity.userId}'});
+                  },
+                  child:Text('${entity.shareUser}',style: TextStyles.greyNormal12,),
+                ),
+                Expanded(child: Container(),),
                 Text('${entity.niceDate}',style: TextStyles.greyNormal12,),
               ],
             ),

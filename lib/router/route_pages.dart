@@ -10,6 +10,12 @@ import 'package:Inke/modules/qa/qa_binding.dart';
 import 'package:Inke/modules/qa/qa_controller.dart';
 import 'package:Inke/modules/search/page_search.dart';
 import 'package:Inke/modules/search/search_binding.dart';
+import 'package:Inke/modules/square/my_share/my_share_binding.dart';
+import 'package:Inke/modules/square/my_share/page_my_share.dart';
+import 'package:Inke/modules/square/share/page_share.dart';
+import 'package:Inke/modules/square/share/share_binding.dart';
+import 'package:Inke/modules/square/share_one/page_share_one.dart';
+import 'package:Inke/modules/square/share_one/share_one_binding.dart';
 import 'package:Inke/modules/square/square_list_binding.dart';
 import 'package:Inke/modules/system/navigation/nav_binding.dart';
 import 'package:Inke/modules/system/article/page_system_article.dart';
@@ -102,6 +108,21 @@ class AppPages{
         name: Routes.systemArticle,
         page: ()=>SystemArticlePage(),
         binding: SystemArticleBinding()
+    ),
+    GetPage(
+        name: Routes.shareOne,
+        page: ()=>ShareOnePage(),
+        binding: ShareOneBinding()
+    ),
+    GetPage(
+        name: Routes.myShare,
+        page: ()=>MySharePage(),
+        binding: MyShareBinding()
+    ),
+    GetPage(
+        name: Routes.share,
+        page: ()=>SharePage(),
+        binding: ShareBinding()
     )
   ];
 }

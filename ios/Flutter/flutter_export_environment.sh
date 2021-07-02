@@ -1,8 +1,8 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/Users/jason/flutter/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/jason/FlutterProjects/MyWanAndroid"
-export "FLUTTER_TARGET=/Users/jason/FlutterProjects/MyWanAndroid/lib/main.dart"
+export "FLUTTER_APPLICATION_PATH=/Users/jason/FlutterProjects/FlutterWanAndroid"
+export "FLUTTER_TARGET=/Users/jason/FlutterProjects/FlutterWanAndroid/lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build/ios"
 export "FLUTTER_BUILD_NAME=1.0.0"
@@ -11,4 +11,4 @@ export "DART_DEFINES=flutter.inspector.structuredErrors%3Dtrue"
 export "DART_OBFUSCATION=false"
 export "TRACK_WIDGET_CREATION=true"
 export "TREE_SHAKE_ICONS=false"
-export "PACKAGE_CONFIG=/Users/jason/FlutterProjects/MyWanAndroid/.dart_tool/package_config.json"
+export "PACKAGE_CONFIG=/Users/jason/FlutterProjects/FlutterWanAndroid/.dart_tool/package_config.json"
